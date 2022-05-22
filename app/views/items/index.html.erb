@@ -1,0 +1,19 @@
+<h1>Inventory Items</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Quantity</th>
+    <th>Warehouse</th>
+  </tr>
+  <% @items.each do |item| %>
+    <tr id="item-<%= item.id %>">
+      <td><%= link_to "#{item.name}", item_path(item.id) %></td>
+      <td><%= item.quantity %></td>
+      <td><%= item.warehouse_name %></td>
+    </tr>
+  <% end %>
+</table>
+<br>
+
+<%= link_to 'Create Item', new_item_path %>

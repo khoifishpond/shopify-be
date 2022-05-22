@@ -1,0 +1,18 @@
+<h1>Item</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Quantity</th>
+    <th colspan='2'></th>
+  </tr>
+  <tr id="item-<%= @item.id %>">
+    <td><%= @item.name %></td>
+    <td><%= @item.quantity %></td>
+    <td><%= link_to 'Edit', edit_item_path(@item.id) %></td>
+    <td><%= link_to 'Delete', item_path(@item.id), method: :delete %></td>
+  </tr>
+</table>
+<br>
+
+<%= link_to 'Back', items_path %>

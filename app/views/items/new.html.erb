@@ -1,0 +1,10 @@
+<h1>Create an Inventory Item</h1>
+
+<%= render partial: 'form', locals: {
+  model: @item,
+  method: :post,
+  button_text: 'Create Item'
+} %>
+<br>
+
+<%= link_to 'Back', items_path %>

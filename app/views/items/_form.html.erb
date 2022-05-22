@@ -1,0 +1,12 @@
+<%= form_with model: model, method: method, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name, required: true%><br><br>
+
+  <%= form.label :quantity %>
+  <%= form.number_field :quantity, required: true %><br><br>
+
+  <%= form.label :warehouse_id %>
+  <%= form.collection_select :warehouse_id, Warehouse.order(:name), :id, :name %><br><br>
+
+  <%= form.submit button_text %>
+<% end %>
