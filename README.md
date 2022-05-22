@@ -34,13 +34,13 @@ Rails 7.0.1
 Clone the project
 
 ```bash
-git clone https://github.com/khoifishpond/shopify-challenge
+git clone https://github.com/khoifishpond/shopify-be
 ```
 
 Go to the project directory
 
 ```bash
-cd shopify-challenge
+cd shopify-be
 ```
 
 Install dependencies
