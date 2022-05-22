@@ -24,5 +24,6 @@ RSpec.describe 'Welcome' do
       click_link 'Warehouses'
 
       expect(current_path).to eq(warehouses_path)
+    end
   end
 end
