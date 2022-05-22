@@ -13,5 +13,16 @@ RSpec.describe 'Welcome' do
     it 'has a home button' do
       expect(page).to have_link('Home')
     end
+
+    it 'has a link to items index' do
+      click_link 'Items'
+
+      expect(current_path).to eq(items_path)
+    end
+
+    it 'has a link to warehouses index' do
+      click_link 'Warehouses'
+
+      expect(current_path).to eq(warehouses_path)
   end
 end
