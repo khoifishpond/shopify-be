@@ -1,0 +1,10 @@
+<h1>Edit Warehouse</h1>
+
+<%= render partial: 'form', locals: {
+  model: @warehouse,
+  method: :patch,
+  button_text: 'Edit Warehouse'
+} %>
+<br>
+
+<%= link_to 'Back', warehouses_path %>
