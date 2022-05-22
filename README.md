@@ -73,5 +73,5 @@ bundle exec rspec
 
 ## Feedback
 
-If you have any feedback, please reach out to me at [here](mailto:khoinguyen311@gmail.com).
+If you have any feedback, please reach out to me [here](mailto:khoinguyen311@gmail.com).
 
