@@ -1,0 +1,10 @@
+<h1>Create a Warehouse</h1>
+
+<%= render partial: 'form', locals: {
+  model: @warehouse,
+  method: :post,
+  button_text: 'Create Warehouse'
+} %>
+<br>
+
+<%= link_to 'Back', warehouses_path %>
