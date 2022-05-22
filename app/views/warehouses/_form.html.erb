@@ -1,0 +1,6 @@
+<%= form_with model: model, method: method, local: true do |form| %>
+  <%= form.label :name %>
+  <%= form.text_field :name, required: true%><br><br>
+
+  <%= form.submit button_text %>
+<% end %>
